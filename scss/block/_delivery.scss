@@ -1,0 +1,35 @@
+.delivery__wrapper{
+    .delivery__list{
+        width: 100%;
+        display: grid;
+        padding: 40px 80px;
+        border-radius: 20px;
+        gap: 100px;
+        grid-template-columns: repeat(3,1fr);
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+        align-items: center;
+        margin-bottom: 100px;
+        .delivery__item{
+            position: relative;
+            strong{  
+                display: block; 
+                @include font($f-family:"Exo",$f-size:20px,$f-weigth:600,$f-heigth:135%,$f-color:#363738);
+                max-width: 228px;
+                margin: 24px 0px 16px 0px;
+            }
+            p{
+                @include font($f-family:"Sans",$f-size:15px,$f-weigth:400,$f-heigth:150%,$f-color:#6B6B6B); 
+                max-width: 225px;
+            }
+        }
+        .delivery__item:nth-child(1)::after,.delivery__item:nth-child(2)::after{
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 100%;
+            background-color: #D7D7DD;
+            top: 0;
+            right: -40px;
+        }
+    }
+}

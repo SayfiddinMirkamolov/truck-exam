@@ -1,0 +1,46 @@
+.stages{
+    .stages__wrapper{
+        .stages__title{
+            @include font($f-family:"Exo",$f-size:48px,$f-weigth:600,$f-heigth:125%,$f-color:#363738);
+            margin-bottom: 48px;
+        }
+        .stages__list{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3,1fr);
+            gap: 24px;
+            .stages__item{
+                display: flex;
+                gap: 56px;
+                padding:32px 30px 32px 30px;
+                box-shadow:0px 4px 15px rgba(0, 0, 0, 0.12);
+                border-radius: 12px;
+                .stages__info{
+                    .stages__info__title{
+                        @include font($f-family:"Exo",$f-size:20px,$f-weigth:600,$f-heigth:125%,$f-color:#363738);
+                        margin-bottom: 48px;
+                        position: relative;
+                    }
+                    .stages__info__title::after{
+                        position: absolute;
+                        content: '';
+                        width: 86px;
+                        height: 3px;
+                        background-color: #FFCE50;
+                        bottom: -24px;
+                        left: 0px;
+                    }
+                    .stages__info__text{
+                        @include font($f-family:"Sans",$f-size:16px,$f-weigth:400,$f-heigth:150%,$f-color:#6B6B6B);
+                        max-width: 568px;
+                    }
+                    .stages__info__text__phone{
+                        @include font($f-family:"Sans",$f-size:16px,$f-weigth:400,$f-heigth:150%,$f-color:#6B6B6B);
+                        display: none;
+                    }
+
+                }
+            }
+        }
+    }
+}

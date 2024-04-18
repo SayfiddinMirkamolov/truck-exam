@@ -1,0 +1,8 @@
+@mixin font($f-color: #6B6B6C, $f-family: "Sans", $f-size:16px, $f-style: normal,$f-weigth:400,$f-heigth: 150%){
+    color: $f-color;
+    font-family: $f-family;
+    font-size: $f-size;
+    font-style: $f-style;
+    font-weight: $f-weigth;
+    line-height: $f-heigth;
+}
